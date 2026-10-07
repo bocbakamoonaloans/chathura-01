@@ -24,3 +24,82 @@
     font-size: 12px;
     opacity: .85;
 }
+/* =========================
+   MOBILE RESPONSIVE RATES
+   ========================= */
+
+@media (max-width: 600px) {
+
+    .table-wrap {
+        width: 100%;
+        overflow-x: hidden;
+        margin: 0;
+    }
+
+    .table-wrap table,
+    .table-wrap thead,
+    .table-wrap tbody,
+    .table-wrap th,
+    .table-wrap td,
+    .table-wrap tr {
+        display: block;
+        width: 100%;
+    }
+
+    .table-wrap thead {
+        display: none;
+    }
+
+    .table-wrap tr {
+        margin-bottom: 16px;
+        padding: 14px;
+        border-radius: 12px;
+        background: #fff;
+        box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+        border: 1px solid #e5e5e5;
+        box-sizing: border-box;
+    }
+
+    .table-wrap td {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 12px;
+        padding: 8px 0;
+        border: none;
+        font-size: 14px;
+        line-height: 1.4;
+        box-sizing: border-box;
+        word-break: break-word;
+    }
+
+    .table-wrap td::before {
+        font-weight: 700;
+        flex: 0 0 42%;
+        color: #555;
+    }
+
+    .table-wrap td:nth-child(1)::before {
+        content: "Scheme";
+    }
+
+    .table-wrap td:nth-child(2)::before {
+        content: "Category";
+    }
+
+    .table-wrap td:nth-child(3)::before {
+        content: "Rate";
+    }
+
+    .table-wrap td:nth-child(4)::before {
+        content: "Type";
+    }
+
+    .table-wrap td:nth-child(5)::before {
+        content: "Last Updated";
+    }
+
+    .table-wrap td:nth-child(3) {
+        font-weight: 700;
+    }
+}
