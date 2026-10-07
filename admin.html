@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Admin | BOC BAKAMOONA</title><link rel="stylesheet" href="assets/css/style.css"></head>
+<body>
+<header class="topbar"><a class="brand" href="index.html"><img src="assets/images/boc-logo.jpg" alt="Bank of Ceylon Logo"><br><small>ADMIN</small></span></a><button class="menu-btn" onclick="toggleMenu()">☰</button><nav id="mainNav"><a href="index.html">Home</a><a href="schemes.html">Schemes</a><a href="rates.html">Rates</a><a href="documents.html">Documents</a><a href="contact.html">Contact</a></nav></header>
+<main><section class="page-hero"><div class="container"><span class="eyebrow dark">CONTROL PANEL</span><h1>Loan Guide Admin</h1><p>Starter browser-based editor. For production use, protect this page with real authentication and a secure database.</p></div></section>
+<section class="container section">
+<div class="admin-login" id="loginBox"><h2>Admin Login</h2><input id="adminUser" placeholder="Username"><input id="adminPass" type="password" placeholder="Password"><button class="btn primary" onclick="adminLogin()">Login</button><small>Demo login: admin / boc123</small></div>
+<div id="adminPanel" class="hidden">
+<div class="admin-head"><h2>Edit Loan Rates</h2><button class="btn danger" onclick="adminLogout()">Logout</button></div>
+<div id="adminRows"></div>
+<button class="btn primary" onclick="saveAdminData()">Save All Changes</button>
+<button class="btn secondary" onclick="resetData()">Reset Demo Data</button>
+<hr>
+<h2>QR Code Generator</h2><p>Enter the public URL of your deployed <b>index.html</b> and generate the customer QR.</p>
+<div class="qr-box"><input id="siteUrl" class="search" placeholder="https://your-domain.com/"><button class="btn primary" onclick="makeQR()">Generate QR</button><div id="qrcode"></div></div>
+</div>
+</section></main>
+<footer class="footer"><small>Admin area • BOC BAKAMOONA Loan Guide</small></footer>
+<script src="assets/js/data.js"></script><script src="assets/js/app.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+</body></html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="BOC BAKAMOONA Loan Guide">
+  <title>BOC BAKAMOONA | Loan Guide</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<header class="topbar">
+  <a  class="brand" href="index.html">
+    <img src="assets/images/boc-logo.jpg" alt="Bank of Ceylon Logo">
+    <div>
+        <strong>BOC BAKAMOONA</strong>
+        <span>Loan Information Centre</span>
+    </div>
+</a>
+  <button class="menu-btn" onclick="toggleMenu()">☰</button>
+  <nav id="mainNav">
+    <a class="active" href="index.html">Home</a>
+    <a href="schemes.html">Loan Schemes</a>
+    <a href="rates.html">Rates</a>
+    <a href="documents.html">Documents</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <span class="eyebrow">BANK OF CEYLON • BAKAMOONA</span>
+      <h1>Find the right<br><strong>Loan Scheme</strong></h1>
+      <p>Explore loan categories, indicative rates, eligibility and required documents in one place.</p>
+      <div class="hero-actions">
+        <a class="btn primary" href="schemes.html">Explore Loan Schemes →</a>
+        <a class="btn glass" href="rates.html">View Rates</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="container section">
+    <div class="section-head">
+      <div><span class="eyebrow dark">QUICK ACCESS</span><h2>What are you looking for?</h2></div>
+      <a class="text-link" href="schemes.html">View all →</a>
+    </div>
+    <div class="quick-grid">
+      <a class="quick-card" href="schemes.html?category=personal"><span>👤</span><b>Personal</b><small>Personal financing</small></a>
+      <a class="quick-card" href="schemes.html?category=housing"><span>🏠</span><b>Housing</b><small>Home & property</small></a>
+      <a class="quick-card" href="schemes.html?category=business"><span>💼</span><b>Business</b><small>SME & entrepreneurs</small></a>
+      <a class="quick-card" href="schemes.html?category=agriculture"><span>🌾</span><b>Agriculture</b><small>Farming & development</small></a>
+    </div>
+  </section>
+
+  <section class="container section soft">
+    <div class="section-head">
+      <div><span class="eyebrow dark">FEATURED</span><h2>Popular loan schemes</h2></div>
+    </div>
+    <div id="featuredSchemes" class="cards"></div>
+  </section>
+
+  <section class="container notice">
+    <div class="notice-icon">ⓘ</div>
+    <div>
+      <b>Important</b>
+      <p>Rates and conditions can change. Always confirm the current rate and eligibility with BOC before making a financial decision.</p>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div><b>BOC BAKAMOONA</b><p>Loan Information Guide</p></div>
+  <div class="footer-links"><a href="schemes.html">Schemes</a><a href="rates.html">Rates</a><a href="contact.html">Contact</a><a href="admin.html">Admin</a></div>
+  <small>© <span class="year"></span> BOC BAKAMOONA Loan Guide • Demo information portal</small>
+</footer>
+
+<script src="assets/js/data.js"></script>
+<script src="assets/js/app.js"></script>
+</body>
+</html>

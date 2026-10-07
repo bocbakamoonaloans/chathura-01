@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Loan Rates | BOC BAKAMOONA</title><link rel="stylesheet" href="assets/css/style.css"></head>
+<body>
+<header class="topbar"><a class="brand" href="index.html"><img src="assets/images/boc-logo.jpg" alt="Bank of Ceylon Logo"><span>BAKAMOONA<br><small>LOAN GUIDE</small></span></a><button class="menu-btn" onclick="toggleMenu()">☰</button><nav id="mainNav"><a href="index.html">Home</a><a href="schemes.html">Loan Schemes</a><a class="active" href="rates.html">Rates</a><a href="documents.html">Documents</a><a href="contact.html">Contact</a></nav></header>
+<main><section class="page-hero"><div class="container"><span class="eyebrow dark">CURRENT INFORMATION</span><h1>Loan Rates</h1><p>Use this page as the customer-facing rate table. Update values from the BOC-approved rate circular before publishing.</p></div></section>
+<section class="container section"><div class="table-wrap"><table><thead><tr><th>Scheme</th><th>Category</th><th>Rate</th><th>Type</th><th>Last Updated</th></tr></thead><tbody id="ratesTable"></tbody></table></div><div class="notice"><div class="notice-icon">!</div><div><b>Verify before use</b><p>The rates included in this starter project are placeholders. Replace them with the latest approved BOC rates.</p></div></div></section></main>
+<footer class="footer"><div><b>BOC BAKAMOONA</b><p>Loan Information Guide</p></div><small>© <span class="year"></span> BOC BAKAMOONA</small></footer>
+<script src="assets/js/data.js"></script><script src="assets/js/app.js"></script><script>document.addEventListener("DOMContentLoaded",renderRates);</script>
+</body></html>

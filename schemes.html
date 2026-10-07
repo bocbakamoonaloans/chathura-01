@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Loan Schemes | BOC BAKAMOONA</title>
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<header class="topbar">
+<a class="brand" href="index.html"> <img src="assets/images/boc-logo.jpg" alt="Bank of Ceylon Logo"><span>BAKAMOONA<br><small>LOAN GUIDE</small></span></a>
+<button class="menu-btn" onclick="toggleMenu()">☰</button>
+<nav id="mainNav"><a href="index.html">Home</a><a class="active" href="schemes.html">Loan Schemes</a><a href="rates.html">Rates</a><a href="documents.html">Documents</a><a href="contact.html">Contact</a></nav>
+</header>
+<main>
+<section class="page-hero"><div class="container"><span class="eyebrow dark">BOC LOAN INFORMATION</span><h1>Loan Schemes</h1><p>Choose a category to explore available products.</p></div></section>
+<section class="container section">
+<div class="toolbar"><input id="searchInput" class="search" placeholder="Search loan schemes..." oninput="renderSchemes()">
+<select id="categoryFilter" class="select" onchange="renderSchemes()"><option value="all">All categories</option><option value="personal">Personal</option><option value="housing">Housing</option><option value="business">Business</option><option value="agriculture">Agriculture</option><option value="vehicle">Vehicle</option><option value="special">Special Schemes</option></select></div>
+<div id="schemeGrid" class="cards"></div>
+</section>
+</main>
+<footer class="footer"><div><b>BOC BAKAMOONA</b><p>Loan Information Guide</p></div><small>© <span class="year"></span> BOC BAKAMOONA</small></footer>
+<script src="assets/js/data.js"></script><script src="assets/js/app.js"></script><script>document.addEventListener("DOMContentLoaded",()=>{const p=new URLSearchParams(location.search).get("category");if(p)document.getElementById("categoryFilter").value=p;renderSchemes();});</script>
+</body>
+</html>
